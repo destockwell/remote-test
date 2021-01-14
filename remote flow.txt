@@ -1,0 +1,24 @@
+Frequency One Remote Flow
+
+Initial Splash Screen
+
+Set up adapter, with Class, not discoverable.
+    if possible limit UUID to AVRCP CT "0000110f-0000-1000-8000-00805f9b34fb" (done somehow in sdp?)
+
+Enter mainloop
+
+Enter Discovery, search for Home Player/Node with UUID==AVRCP TG "0000110c-0000-1000-8000-00805f9b34fb"
+
+Establish current state as Discovering
+
+Continue discovery until <any> Node found Then
+
+Connect to Device using ConnectProfile (with AVRCP TG)
+
+With connected device, create object/interface of org.bluez.MediaPlayer1
+
+Establish current state as Running
+
+Begin passing command buttons to MediaPlayer
+
+When properties change (particularly Track info, time-in-track) display on touch screen
